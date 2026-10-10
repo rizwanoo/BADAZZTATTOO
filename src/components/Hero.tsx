@@ -45,6 +45,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
           loop
           muted={isMuted}
           playsInline
+          preload="auto"
           poster="/images/hero-tattoo-artist-poster.jpg"
           className="w-full h-full object-cover filter contrast-105 brightness-100"
         >
