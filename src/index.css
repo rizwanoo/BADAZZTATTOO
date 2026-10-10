@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-obsidian: #080808;
+    --bg-charcoal: #141414;
+    --bg-graphite: #202020;
+    --text-ivory: #F2EEE7;
+    --text-silver: #A8A8A8;
+    --accent-crimson: #B51F2D;
+    --accent-crimson-glow: rgba(181, 31, 45, 0.4);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-obsidian);
+    color: var(--text-ivory);
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-modern {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B51F2D;
+}
+
+/* Subtle Film Grain Noise Overlay */
+.film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Dark Vignette */
+.cinematic-vignette {
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8), inset 0 0 200px rgba(0, 0, 0, 0.9);
+}
